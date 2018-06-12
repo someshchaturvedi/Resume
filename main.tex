@@ -1,0 +1,273 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Somesh}{Chaturvedi}{
+\href{mailto:somesh.08.96@gmail.com}{somesh.08.96@gmail.com} | +91-7895382673
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Areas Of Interest} 
+
+\descript{Artificial Intelligence}
+\descript{Software Development}
+\descript{Computational Biology}
+
+\sectionsep
+
+\section{Education} 
+
+\subsection{Under-graduation}
+\descript{B.Tech Biotechnology}
+\location{IIT Roorkee, 2014 - 2018}
+\sectionsep
+
+
+\subsection{High School}
+Secured 99.96 percentile\\
+in JEE-Advanced\\
+
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Under-graduation}
+Modeling of Biological Data\\
+Molecular Genetics \\
+Psychological Studies \\
+Interpersonal Dynamics\\
+Programming \\
+Linear Algebra and Calculus \\
+Modern Physics\\
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Computer Languages}
+Python \textbullet{}   C \textbullet{} C++ \textbullet{} R \\
+JavaScript \textbullet{} Java \textbullet{} C\#  \\
+php \textbullet{} HTML5 \& CSS3 \\
+\sectionsep
+\subsection{Software Packages}
+Android Studio \textbullet{}   Visual Studio \\
+Git \textbullet{} Heroku \textbullet{} AWS \textbullet{} Linux\\ 
+MySQL \textbullet{} MongoDB\\
+
+\sectionsep
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+Github:// \href{https://github.com/someshchaturvedi}{\custombold{someshchaturvedi}} \\
+LinkedIn://  \href{https://www.linkedin.com/in/somesh-chaturvedi-997974103/}{\custombold{somesh-chaturvedi}} \\
+Medium://  \href{https://medium.com/@somesh.08.96}{\custombold{somesh.08.96}}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     REFRENCES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Refrences}
+\subsection{Amit Garg}
+\descript{CEO, H-ilabs INC}
+amit.garg@hilabs.com
+\sectionsep
+\subsection{Dr. Deepak Sharma}
+\descript{Assistant Professor, IIT Roorkee}
+deepak.fbt@iitr.ac.in\\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Internships}
+
+\runsubsection{Supertext Technologies}
+\descript{Software Engineering Intern }
+\location{May 2017 – Jul 2017 | Bangalore, India}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Conceptualised and designed back-end architecture of the machine learning engine for intents and entities classification
+\item Implemented machine learning algorithms and semantic comparison methods
+\item Deployed on Amazon EC2 instance and used Jenkins for automation
+\item Published a Django middleware for customizable django profiling
+\end{tightemize}
+\sectionsep
+
+\runsubsection{H-ilabs INC}
+\descript{Software Engineering Intern }
+\location{May 2016 – July 2016 | Mumbai, India}
+\begin{tightemize}
+\item Worked on Data Visualization using Highcharts and DataTables
+\item Grasped the fundamentals of Big Data and Natural Language Processing
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Ingenium}
+\descript{Software Development Intern}
+\location{May 2017 – Jul 2017 | Remote}
+\begin{tightemize}
+\item Designed the back-end and application architecture of the platform providing tailor-made tests
+\item Used Django, Django REST framework and AWS RDS as database 
+\item Implemented Celery Redis for queuing tasks and deployed on AWS eb instance 
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+\runsubsection{Dhadkan}
+\location{Computational Biology and Translational Bioinformatics Lab, IIT Roorkee}
+\begin{tightemize}
+\item A mobile application for heart patients to communicate with doctors efficiently with high security
+\item Analysing Machine Learning and Image Processing algorithms to automate
+the diagnosis of ECG image analysis and prediction of heart failures beforehand
+\item Developed on Django and integrated JWT authentication and FCM services
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Motif Prediction Program}
+\location{Computational Biology and Translational Bioinformatics Lab, IIT Roorkee}
+\begin{tightemize}
+\item Developing an efficient algorithm using machine learning models to predict regulatory motifs in DNA sequences
+\item Exploring various machine learning and standard algorithms for the same
+\end{tightemize}
+\sectionsep
+
+\runsubsection{customizable-django-profiler}
+\location{Github}
+\begin{tightemize}
+\item Published a Python library which received substantial number of downloads
+\item Django middleware which is used for profiling requests for performance optimizations of remote servers
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Positions of Responsibility
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Positions Of Responsibility}
+\runsubsection{Manager Web}
+\descript{Cognizance, Annual Technical Festival}
+\location{2016 - 2017 | IIT Roorkee}
+\begin{tightemize}
+\item Conceptualised and formulated entire timeline of the website creation.
+\item  Spearheaded a 3-tier team of 20 developers and designers
+\item Created a software for on-boarding of 2610 participants across India
+\item Developed the website, as a member-web, Central Organizing Team, in 2015-16 edition
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards} 
+% \begin{tabular}{rll}
+% 2014	     & top 52/2500  & KPCB Engineering Fellow\\
+% 2014	     & 2\textsuperscript{nd} most points  & Google Code Jam, Qualification Round\\
+% 2014	     & 1\textsuperscript{st}/50  & Microsoft Coding Competition, Cornell\\
+% 2013	     & National  & Jump Trading Challenge Finalist\\
+% 2013     & 7\textsuperscript{th}/120 & CS 3410 Cache Race Bot Tournament  \\
+% 2012     & 2\textsuperscript{nd}/150 & CS 3110 Biannual Intra-Class Bot Tournament \\
+% 2011     & National & Indian National Mathematics Olympiad (INMO) Finalist \\
+% 2010     & National & Comp. Soc. of India's National Programming Contest\\
+% \end{tabular}
+% \sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
